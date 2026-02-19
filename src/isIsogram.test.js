@@ -31,7 +31,7 @@ describe('isIsogram', () => {
     expect(result).toBe(false);
   });
 
-  it('ignores case', () => {
+  it(`is case-insensitive — treats 'Oops' as non-isogram`, () => {
     const result = isIsogram('Oops');
 
     expect(result).toBe(false);
